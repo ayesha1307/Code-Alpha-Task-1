@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <!-- Main image viewer with transparent background images -->
+        <div class="gallery">
+            <div class="background-images">
+                <img src="image1.jpg" alt="Background Image 1">
+                <img src="image2.jpg" alt="Background Image 2">
+                <img src="image3.jpg" alt="Background Image 3">
+                <img src="image4.jpg" alt="Background Image 4">
+                <img src="image5.jpg" alt="Background Image 5">
+                <img src="Image6.jpg" alt="Background Image 6">
+            </div>
+            <img src="image1.jpg" alt="Selected Image" class="active-image">
+        </div>
+
+        <!-- Image navigation buttons -->
+        <div class="navigation">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+
+        <!-- Image thumbnails for direct selection -->
+        <div class="thumbnails">
+            <img src="image1.jpg" alt="Thumbnail 1" data-index="0" class="thumbnail">
+            <img src="image2.jpg" alt="Thumbnail 2" data-index="1" class="thumbnail">
+            <img src="image3.jpg" alt="Thumbnail 3" data-index="2" class="thumbnail">
+            <img src="image4.jpg" alt="Thumbnail 4" data-index="3" class="thumbnail">
+            <img src="image5.jpg" alt="Thumbnail 5" data-index="4" class="thumbnail">
+            <img src="Image6.jpg" alt="Thumbnail 6" data-index="5" class="thumbnail">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
